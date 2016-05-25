@@ -38,7 +38,11 @@
 					"_parent": {
 						"$ref": "AAAAAAFUy6xQLKNCqBY="
 					},
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
 					"name": "ReceiptKeeper",
+=======
+					"name": "Receipt Keeper",
+>>>>>>> dev:doc/raw/ReceiptKeeper.mdj
 					"visible": true,
 					"defaultDiagram": false,
 					"ownedViews": [
@@ -69,11 +73,23 @@
 									"containerExtending": false,
 									"left": 150,
 									"top": 13,
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
 									"width": 86,
 									"height": 13,
 									"autoResize": false,
 									"underline": false,
 									"text": "ReceiptKeeper",
+=======
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
+									"width": 90,
+=======
+									"width": 89,
+>>>>>>> fe9092431fb81b40b7d95f2f573b152d9ae877b7:doc/raw/ExpenseSense.mdj
+									"height": 13,
+									"autoResize": false,
+									"underline": false,
+									"text": "Receipt Keeper",
+>>>>>>> dev:doc/raw/ReceiptKeeper.mdj
 									"horizontalAlignment": 2,
 									"verticalAlignment": 5
 								},
@@ -189,7 +205,11 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
 											"text": "Database_DAAS",
+=======
+											"text": "DAAS",
+>>>>>>> dev:doc/raw/ReceiptKeeper.mdj
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5
 										},
@@ -1327,7 +1347,11 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
 											"text": "WebServer_BAAS",
+=======
+											"text": "Web Server BAAS",
+>>>>>>> dev:doc/raw/ReceiptKeeper.mdj
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5
 										},
@@ -3923,7 +3947,45 @@
 							"templateParameterCompartment": {
 								"$ref": "AAAAAAFUy7+gbac0f9Y="
 							}
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
 						},
+=======
+						}
+					]
+				},
+				{
+					"_type": "UMLNode",
+					"_id": "AAAAAAFUy64IoKNTkVo=",
+					"_parent": {
+						"$ref": "AAAAAAFUy6xQLKNCqBY="
+					},
+					"name": "DAAS",
+					"visibility": "public",
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false
+				},
+				{
+					"_type": "UMLArtifact",
+					"_id": "AAAAAAFUy7T6NaOFqRE=",
+					"_parent": {
+						"$ref": "AAAAAAFUy6xQLKNCqBY="
+					},
+					"name": "MongoDB",
+					"visibility": "public",
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false
+				},
+				{
+					"_type": "UMLNode",
+					"_id": "AAAAAAFUy7VWwKOw+mw=",
+					"_parent": {
+						"$ref": "AAAAAAFUy6xQLKNCqBY="
+					},
+					"name": "Web Client",
+					"ownedElements": [
+>>>>>>> dev:doc/raw/ReceiptKeeper.mdj
 						{
 							"_type": "UMLArtifactView",
 							"_id": "AAAAAAFU6hIXDUA3F7Y=",
@@ -4313,7 +4375,11 @@
 					"_parent": {
 						"$ref": "AAAAAAFUy6xQLKNCqBY="
 					},
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
 					"name": "WebServer_BAAS",
+=======
+					"name": "Web Server BAAS",
+>>>>>>> dev:doc/raw/ReceiptKeeper.mdj
 					"ownedElements": [
 						{
 							"_type": "UMLCommunicationPath",
@@ -4547,7 +4613,11 @@
 									"containerExtending": false,
 									"left": 8,
 									"top": 45,
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
 									"width": 188,
+=======
+									"width": 193,
+>>>>>>> dev:doc/raw/ReceiptKeeper.mdj
 									"height": 13,
 									"autoResize": false,
 									"underline": false,
@@ -4769,8 +4839,13 @@
 									"containerExtending": false,
 									"left": 8,
 									"top": 63,
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
 									"width": 188,
 									"height": 128,
+=======
+									"width": 193,
+									"height": 10,
+>>>>>>> dev:doc/raw/ReceiptKeeper.mdj
 									"autoResize": false
 								}
 							],
@@ -4785,7 +4860,11 @@
 							"containerExtending": false,
 							"left": 8,
 							"top": 40,
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
 							"width": 188,
+=======
+							"width": 193,
+>>>>>>> dev:doc/raw/ReceiptKeeper.mdj
 							"height": 169,
 							"autoResize": false,
 							"nameLabel": {
@@ -4796,6 +4875,7 @@
 							}
 						},
 						{
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
 							"_type": "ERDEntityView",
 							"_id": "AAAAAAFUy9TKhK2FFGY=",
 							"_parent": {
@@ -5080,6 +5160,32 @@
 						},
 						{
 							"_type": "ERDEntityView",
+=======
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFUy8ssoa12328=",
+							"_parent": {
+								"$ref": "AAAAAAFUy8oPzK1KKLU="
+							},
+							"visible": true,
+							"enabled": true,
+							"lineColor": "#000000",
+							"fillColor": "#ffffff",
+							"fontColor": "#000000",
+							"font": "Arial;13;0",
+							"showShadow": true,
+							"containerChangeable": false,
+							"containerExtending": false,
+							"left": 16,
+							"top": 72,
+							"width": 201,
+							"height": 130,
+							"autoResize": false,
+							"text": "id: Int\nusername: Char[]\nemail: Char[]\ndateOfBirth: Date\ngender: \naccounttypeID: AccountType\ncreated : DateTime\nmodified: DateTime",
+							"wordWrap": true
+						},
+						{
+							"_type": "ERDEntityView",
+>>>>>>> dev:doc/raw/ReceiptKeeper.mdj
 							"_id": "AAAAAAFUy92aEK3dndg=",
 							"_parent": {
 								"$ref": "AAAAAAFUy8oPzK1KKLU="
@@ -5792,7 +5898,11 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
 									"left": 277,
+=======
+									"left": 284,
+>>>>>>> dev:doc/raw/ReceiptKeeper.mdj
 									"top": 111,
 									"width": 0,
 									"height": 13,
@@ -5822,7 +5932,11 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
 									"left": 220,
+=======
+									"left": 225,
+>>>>>>> dev:doc/raw/ReceiptKeeper.mdj
 									"top": 111,
 									"width": 0,
 									"height": 13,
@@ -5884,7 +5998,11 @@
 								"$ref": "AAAAAAFUy8oj7q1iiBQ="
 							},
 							"lineStyle": 2,
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
 							"points": "195:132;360:132",
+=======
+							"points": "200:132;368:132",
+>>>>>>> dev:doc/raw/ReceiptKeeper.mdj
 							"nameLabel": {
 								"$ref": "AAAAAAFUy+bCCK6n3jQ="
 							},
@@ -6358,8 +6476,13 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
 									"left": 711,
 									"top": 138,
+=======
+									"left": 715,
+									"top": 137,
+>>>>>>> dev:doc/raw/ReceiptKeeper.mdj
 									"width": 0,
 									"height": 13,
 									"autoResize": false,
@@ -6389,7 +6512,7 @@
 									"containerChangeable": false,
 									"containerExtending": false,
 									"left": 790,
-									"top": 137,
+									"top": 136,
 									"width": 0,
 									"height": 13,
 									"autoResize": false,
@@ -6418,8 +6541,13 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
 									"left": 633,
 									"top": 137,
+=======
+									"left": 641,
+									"top": 136,
+>>>>>>> dev:doc/raw/ReceiptKeeper.mdj
 									"width": 0,
 									"height": 13,
 									"autoResize": false,
@@ -6450,7 +6578,11 @@
 								"$ref": "AAAAAAFUy/P9Da+iN+k="
 							},
 							"lineStyle": 2,
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
 							"points": "816:129;608:129",
+=======
+							"points": "816:128;616:128",
+>>>>>>> dev:doc/raw/ReceiptKeeper.mdj
 							"nameLabel": {
 								"$ref": "AAAAAAFUy/YQ8rAH3TU="
 							},
@@ -6462,20 +6594,220 @@
 							}
 						},
 						{
-							"_type": "ERDRelationshipView",
-							"_id": "AAAAAAFUzy3XfktfrsU=",
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
+							"_type": "ERDEntityView",
+							"_id": "AAAAAAFU5B9kBvUoGYM=",
 							"_parent": {
 								"$ref": "AAAAAAFUy8oPzK1KKLU="
 							},
 							"model": {
+								"$ref": "AAAAAAFU5B9kBvUmVyM="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFU5B9kBvUpP0U=",
+									"_parent": {
+										"$ref": "AAAAAAFU5B9kBvUoGYM="
+									},
+									"visible": true,
+									"enabled": true,
+									"lineColor": "#000000",
+									"fillColor": "#ffffff",
+									"fontColor": "#000000",
+									"font": "Arial;13;1",
+									"showShadow": true,
+									"containerChangeable": false,
+									"containerExtending": false,
+									"left": 56,
+									"top": 389,
+									"width": 53,
+									"height": 13,
+									"autoResize": false,
+									"underline": false,
+									"text": "Entity1",
+									"horizontalAlignment": 2,
+									"verticalAlignment": 5
+								},
+								{
+									"_type": "ERDColumnCompartmentView",
+									"_id": "AAAAAAFU5B9kB/UqI0I=",
+									"_parent": {
+										"$ref": "AAAAAAFU5B9kBvUoGYM="
+									},
+									"model": {
+										"$ref": "AAAAAAFU5B9kBvUmVyM="
+									},
+									"visible": true,
+									"enabled": true,
+									"lineColor": "#000000",
+									"fillColor": "#ffffff",
+									"fontColor": "#000000",
+									"font": "Arial;13;0",
+									"showShadow": true,
+									"containerChangeable": false,
+									"containerExtending": false,
+									"left": 56,
+									"top": 407,
+									"width": 53,
+									"height": 10,
+									"autoResize": false
+								}
+							],
+							"visible": true,
+							"enabled": true,
+							"lineColor": "#000000",
+							"fillColor": "#ffffff",
+							"fontColor": "#000000",
+							"font": "Arial;13;0",
+							"showShadow": true,
+							"containerChangeable": false,
+							"containerExtending": false,
+							"left": 56,
+							"top": 384,
+							"width": 53,
+							"height": 33,
+							"autoResize": false,
+							"nameLabel": {
+								"$ref": "AAAAAAFU5B9kBvUpP0U="
+							},
+							"columnCompartment": {
+								"$ref": "AAAAAAFU5B9kB/UqI0I="
+							}
+						},
+						{
+							"_type": "ERDEntityView",
+							"_id": "AAAAAAFU5B9oFPU0xHY=",
+							"_parent": {
+								"$ref": "AAAAAAFUy8oPzK1KKLU="
+							},
+							"model": {
+								"$ref": "AAAAAAFU5B9oE/UyJm4="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFU5B9oFPU1OYU=",
+									"_parent": {
+										"$ref": "AAAAAAFU5B9oFPU0xHY="
+									},
+									"visible": true,
+									"enabled": true,
+									"lineColor": "#000000",
+									"fillColor": "#ffffff",
+									"fontColor": "#000000",
+									"font": "Arial;13;1",
+									"showShadow": true,
+									"containerChangeable": false,
+									"containerExtending": false,
+									"left": 24,
+									"top": 333,
+									"width": 129,
+									"height": 13,
+									"autoResize": false,
+									"underline": false,
+									"text": "AccountType",
+									"horizontalAlignment": 2,
+									"verticalAlignment": 5
+								},
+								{
+									"_type": "ERDColumnCompartmentView",
+									"_id": "AAAAAAFU5B9oFPU25Sw=",
+									"_parent": {
+										"$ref": "AAAAAAFU5B9oFPU0xHY="
+									},
+									"model": {
+										"$ref": "AAAAAAFU5B9oE/UyJm4="
+									},
+									"visible": true,
+									"enabled": true,
+									"lineColor": "#000000",
+									"fillColor": "#ffffff",
+									"fontColor": "#000000",
+									"font": "Arial;13;0",
+									"showShadow": true,
+									"containerChangeable": false,
+									"containerExtending": false,
+									"left": 24,
+									"top": 351,
+									"width": 129,
+									"height": 10,
+									"autoResize": false
+								}
+							],
+							"visible": true,
+							"enabled": true,
+							"lineColor": "#000000",
+							"fillColor": "#ffffff",
+							"fontColor": "#000000",
+							"font": "Arial;13;0",
+							"showShadow": true,
+							"containerChangeable": false,
+							"containerExtending": false,
+							"left": 24,
+							"top": 328,
+							"width": 129,
+							"height": 185,
+							"autoResize": false,
+							"nameLabel": {
+								"$ref": "AAAAAAFU5B9oFPU1OYU="
+							},
+							"columnCompartment": {
+								"$ref": "AAAAAAFU5B9oFPU25Sw="
+							}
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFU5CDba/VZrWc=",
+							"_parent": {
+								"$ref": "AAAAAAFUy8oPzK1KKLU="
+							},
+							"visible": true,
+							"enabled": true,
+							"lineColor": "#000000",
+							"fillColor": "#ffffff",
+							"fontColor": "#000000",
+							"font": "Arial;13;0",
+							"showShadow": true,
+							"containerChangeable": false,
+							"containerExtending": false,
+							"left": 32,
+							"top": 360,
+							"width": 105,
+							"height": 57,
+							"autoResize": false,
+							"text": "id: Int\ntype: Int\nname: Char[]\n",
+							"wordWrap": true
+						},
+						{
+							"_type": "ERDRelationshipView",
+							"_id": "AAAAAAFU6VtgsNawxPU=",
+=======
+							"_type": "ERDRelationshipView",
+							"_id": "AAAAAAFUzy3XfktfrsU=",
+>>>>>>> fe9092431fb81b40b7d95f2f573b152d9ae877b7:doc/raw/ExpenseSense.mdj
+							"_parent": {
+								"$ref": "AAAAAAFUy8oPzK1KKLU="
+							},
+							"model": {
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
+								"$ref": "AAAAAAFU6Vtgr9asxhs="
+=======
 								"$ref": "AAAAAAFUzy3XfUtbv9Q="
+>>>>>>> fe9092431fb81b40b7d95f2f573b152d9ae877b7:doc/raw/ExpenseSense.mdj
 							},
 							"subViews": [
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
+									"_id": "AAAAAAFU6Vtgsdaxtag=",
+									"_parent": {
+										"$ref": "AAAAAAFU6VtgsNawxPU="
+=======
 									"_id": "AAAAAAFUzy3Xf0tgEKs=",
 									"_parent": {
 										"$ref": "AAAAAAFUzy3XfktfrsU="
+>>>>>>> fe9092431fb81b40b7d95f2f573b152d9ae877b7:doc/raw/ExpenseSense.mdj
 									},
 									"visible": false,
 									"enabled": true,
@@ -6486,15 +6818,24 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
+									"left": 84,
+									"top": 261,
+=======
 									"left": 374,
 									"top": 329,
+>>>>>>> fe9092431fb81b40b7d95f2f573b152d9ae877b7:doc/raw/ExpenseSense.mdj
 									"width": 0,
 									"height": 13,
 									"autoResize": false,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
+										"$ref": "AAAAAAFU6VtgsNawxPU="
+=======
 										"$ref": "AAAAAAFUzy3XfktfrsU="
+>>>>>>> fe9092431fb81b40b7d95f2f573b152d9ae877b7:doc/raw/ExpenseSense.mdj
 									},
 									"edgePosition": 1,
 									"underline": false,
@@ -6503,9 +6844,15 @@
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
+									"_id": "AAAAAAFU6Vtgsdayo5I=",
+									"_parent": {
+										"$ref": "AAAAAAFU6VtgsNawxPU="
+=======
 									"_id": "AAAAAAFUzy3Xf0th7oY=",
 									"_parent": {
 										"$ref": "AAAAAAFUzy3XfktfrsU="
+>>>>>>> fe9092431fb81b40b7d95f2f573b152d9ae877b7:doc/raw/ExpenseSense.mdj
 									},
 									"visible": true,
 									"enabled": true,
@@ -6516,15 +6863,24 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
+									"left": 84,
+									"top": 296,
+=======
 									"left": 369,
 									"top": 315,
+>>>>>>> fe9092431fb81b40b7d95f2f573b152d9ae877b7:doc/raw/ExpenseSense.mdj
 									"width": 0,
 									"height": 13,
 									"autoResize": false,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
+										"$ref": "AAAAAAFU6VtgsNawxPU="
+=======
 										"$ref": "AAAAAAFUzy3XfktfrsU="
+>>>>>>> fe9092431fb81b40b7d95f2f573b152d9ae877b7:doc/raw/ExpenseSense.mdj
 									},
 									"edgePosition": 2,
 									"underline": false,
@@ -6533,9 +6889,15 @@
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
+									"_id": "AAAAAAFU6Vtgsdazqvg=",
+									"_parent": {
+										"$ref": "AAAAAAFU6VtgsNawxPU="
+=======
 									"_id": "AAAAAAFUzy3Xf0tij2s=",
 									"_parent": {
 										"$ref": "AAAAAAFUzy3XfktfrsU="
+>>>>>>> fe9092431fb81b40b7d95f2f573b152d9ae877b7:doc/raw/ExpenseSense.mdj
 									},
 									"visible": true,
 									"enabled": true,
@@ -6546,15 +6908,28 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
+									"left": 84,
+									"top": 227,
+=======
 									"left": 374,
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
 									"top": 235,
+=======
+									"top": 267,
+>>>>>>> fe9092431fb81b40b7d95f2f573b152d9ae877b7:doc/raw/ExpenseSense.mdj
+>>>>>>> dev:doc/raw/ReceiptKeeper.mdj
 									"width": 0,
 									"height": 13,
 									"autoResize": false,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
+										"$ref": "AAAAAAFU6VtgsNawxPU="
+=======
 										"$ref": "AAAAAAFUzy3XfktfrsU="
+>>>>>>> fe9092431fb81b40b7d95f2f573b152d9ae877b7:doc/raw/ExpenseSense.mdj
 									},
 									"edgePosition": 0,
 									"underline": false,
@@ -6572,6 +6947,23 @@
 							"containerChangeable": false,
 							"containerExtending": false,
 							"head": {
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
+								"$ref": "AAAAAAFUy8oj7q1iiBQ="
+							},
+							"tail": {
+								"$ref": "AAAAAAFU5B9oFPU0xHY="
+							},
+							"lineStyle": 2,
+							"points": "99:328;99:208",
+							"nameLabel": {
+								"$ref": "AAAAAAFU6Vtgsdaxtag="
+							},
+							"tailNameLabel": {
+								"$ref": "AAAAAAFU6Vtgsdayo5I="
+							},
+							"headNameLabel": {
+								"$ref": "AAAAAAFU6Vtgsdazqvg="
+=======
 								"$ref": "AAAAAAFUy92aEK3dndg="
 							},
 							"tail": {
@@ -6587,6 +6979,7 @@
 							},
 							"headNameLabel": {
 								"$ref": "AAAAAAFUzy3Xf0tij2s="
+>>>>>>> fe9092431fb81b40b7d95f2f573b152d9ae877b7:doc/raw/ExpenseSense.mdj
 							}
 						}
 					]
@@ -7502,6 +7895,57 @@
 									"$ref": "AAAAAAFUy92aEK3bPcw="
 								},
 								"cardinality": "1..*"
+<<<<<<< HEAD:doc/raw/ReceiptKeeper.mdj
+=======
+							},
+							"identifying": true
+						}
+					]
+				},
+				{
+					"_type": "ERDEntity",
+					"_id": "AAAAAAFU5B9kBvUmVyM=",
+					"_parent": {
+						"$ref": "AAAAAAFUy8oPy61J4fM="
+					},
+					"name": "Entity1"
+				},
+				{
+					"_type": "ERDEntity",
+					"_id": "AAAAAAFU5B9oE/UyJm4=",
+					"_parent": {
+						"$ref": "AAAAAAFUy8oPy61J4fM="
+					},
+					"name": "AccountType",
+					"ownedElements": [
+						{
+							"_type": "ERDRelationship",
+							"_id": "AAAAAAFU6Vtgr9asxhs=",
+							"_parent": {
+								"$ref": "AAAAAAFU5B9oE/UyJm4="
+							},
+							"end1": {
+								"_type": "ERDRelationshipEnd",
+								"_id": "AAAAAAFU6Vtgr9at08k=",
+								"_parent": {
+									"$ref": "AAAAAAFU6Vtgr9asxhs="
+								},
+								"reference": {
+									"$ref": "AAAAAAFU5B9oE/UyJm4="
+								},
+								"cardinality": "1"
+							},
+							"end2": {
+								"_type": "ERDRelationshipEnd",
+								"_id": "AAAAAAFU6VtgsNauNWU=",
+								"_parent": {
+									"$ref": "AAAAAAFU6Vtgr9asxhs="
+								},
+								"reference": {
+									"$ref": "AAAAAAFUy8oj7q1gNqY="
+								},
+								"cardinality": "1..*"
+>>>>>>> dev:doc/raw/ReceiptKeeper.mdj
 							},
 							"identifying": true
 						}
@@ -7649,6 +8093,14 @@
 							"unique": false
 						}
 					]
+				},
+				{
+					"_type": "ERDEntity",
+					"_id": "AAAAAAFU5B+AQ/U/AJ8=",
+					"_parent": {
+						"$ref": "AAAAAAFUy8oPy61J4fM="
+					},
+					"name": "Entity2"
 				}
 			]
 		}
