@@ -6985,7 +6985,7 @@
 								"$ref": "AAAAAAFUy92aEK3bPcw="
 							},
 							"name": "total",
-							"type": "INTEGER",
+							"type": "FLOAT",
 							"length": 0,
 							"primaryKey": false,
 							"foreignKey": false,
