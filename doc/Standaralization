@@ -1,0 +1,9 @@
+ANDROID :
+• Class names start with Capital letter
+• Layout names start with Capital letter
+• Method follow PascalCase
+• Attributes follow camelCase
+
+GIT :
+• Always start a git commit with a Verb
+• Make it breif ( max 7 words)
