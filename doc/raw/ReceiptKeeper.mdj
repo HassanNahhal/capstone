@@ -4530,7 +4530,7 @@
 									"height": 13,
 									"autoResize": false,
 									"underline": false,
-									"text": "User",
+									"text": "Customer",
 									"horizontalAlignment": 2,
 									"verticalAlignment": 5
 								},
@@ -6576,7 +6576,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFUy8oPy61J4fM="
 					},
-					"name": "User",
+					"name": "Customer",
 					"ownedElements": [
 						{
 							"_type": "ERDRelationship",
