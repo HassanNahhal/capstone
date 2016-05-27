@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "MongoDB": {
+    "host": "ds039195.mlab.com",
+    "port": 39195,
+    "url": "",
+    "database": "receipt-keeper",
+    "password": "receiptkeeper",
+    "name": "MongoDB",
+    "user": "receiptmongo",
+    "connector": "mongodb"
+  }
+}
