@@ -15,7 +15,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "receipts": {
+      "type": "hasMany",
+      "model": "Receipt",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
