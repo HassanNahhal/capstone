@@ -1,0 +1,14 @@
+<h1>{{ action }} Store</h1>
+<hr>
+<form name="storeForm" novalidate ng-submit="submitForm()">
+  <div class="form-group" ng-class="{'has-error': storeForm.name.$invalid && storeForm.name.$dirty}">
+    <input type="text" class="form-control" name="name" 
+        placeholder="Name" autocomplete="off" required
+        ng-model="storename">
+    <span class="has-error control-label" ng-show="storeForm.name.$invalid && storeForm.name.$dirty">
+      Store name is required.
+    </span>        
+  </div>
+  <button class="btn btn-default" ng-disabled="storeForm.$invalid">{{ action }} Store</button>
+</form>
+<hr>
