@@ -4,3 +4,13 @@ body {
 .glyphicon-remove:hover {
  cursor:pointer;
 }
+
+.checkbox {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.checkbox span {
+    margin-left: 20px;
+    font-weight: normal;
+}

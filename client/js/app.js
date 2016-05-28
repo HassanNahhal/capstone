@@ -33,7 +33,15 @@ angular
         url: '/deleteStore/:id',
         controller: 'DeleteStoreController'
         // , authenticate: true
-      });
+      	})
+		.state('Login', {
+			url: '/Login',
+			templateUrl: 'views/users/login.html'
+		})
+		.state('Signup', {
+			url: '/Signup',
+			templateUrl: 'views/users/signup.html'
+		});
 
    $urlRouterProvider.otherwise('Home');
 
