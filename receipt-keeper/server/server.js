@@ -3,6 +3,9 @@ var boot = require('loopback-boot');
 
 var app = module.exports = loopback();
 
+var path = require('path');
+app.use(loopback.static(path.resolve(__dirname, '../client')));
+
 app.start = function() {
   // start the web server
   return app.listen(function() {
