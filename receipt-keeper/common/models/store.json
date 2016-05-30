@@ -15,14 +15,13 @@
     }
   },
   "validations": [],
-  "relations": {},
-  "acls": [
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$everyone",
-      "permission": "ALLOW"
-    }
-  ],
+  "relations": {
+    "receipts": {
+      "type": "hasMany",
+      "model": "Receipt",
+      "foreignKey": ""
+    }    
+  },
+  "acls": [],
   "methods": {}
 }

@@ -22,8 +22,8 @@
   	'$scope', 'Store', function($scope, Store) {
 	    $scope.stores = Store.find();
   }])
-  .controller('EditStoreController', [
-  		'$scope', 'Store', '$stateParams', '$state', function($scope, Store, $stateParams, $state) {
+  .controller('EditStoreController', ['$scope', 'Store', '$stateParams', '$state', 
+      function($scope, Store, $stateParams, $state) {
 		    $scope.action = 'Edit';
 
         Store.findById({ id: $stateParams.id }).$promise

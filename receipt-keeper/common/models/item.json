@@ -17,27 +17,20 @@
       "type": "number",
       "required": true
     },
-    "id": {
+    "unit": {
       "type": "number",
-      "id": true,
-      "required": true
+      "required": false
     }
   },
   "validations": [],
   "relations": {
-    "receiptItem": {
-      "type": "belongsTo",
-      "model": "ReceiptItem",
-      "foreignKey": "itemId"
-    }
+    "receipts": {
+      "type": "hasMany",
+      "model": "Receipt",
+      "foreignKey": "",
+      "through": "ReceiptItem"
+    }    
   },
-  "acls": [
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$everyone",
-      "permission": "ALLOW"
-    }
-  ],
+  "acls": [],
   "methods": {}
 }
