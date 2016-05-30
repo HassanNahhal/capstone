@@ -1,0 +1,35 @@
+{
+  "name": "ReceiptItem",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "receiptId": {
+      "type": "number",
+      "id": false,
+      "required": true
+    },
+    "itemId": {
+      "type": "number",
+      "id": false,
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "receipt": {
+      "type": "belongsTo",
+      "model": "Receipt",
+      "foreignKey": "receiptId"
+    },
+    "item": {
+      "type": "belongsTo",
+      "model": "Item",
+      "foreignKey": "itemId"
+    }      
+  },
+  "acls": [],
+  "methods": {}
+}

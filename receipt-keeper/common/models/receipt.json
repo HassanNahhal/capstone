@@ -1,0 +1,49 @@
+{
+  "name": "Receipt",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "TimeStamp": true
+  },
+  "properties": {
+    "numberOfItem": {
+      "type": "number",
+      "required": true
+    },
+    "total": {
+      "type": "number",
+      "required": true
+    },
+    "error": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "comment": {
+      "type": "string"
+    },
+    "imageFilePath": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "items": {
+      "type": "hasMany",
+      "model": "Item",
+      "foreignKey": "",
+      "through": "ReceiptItem"
+    },
+    "store": {
+      "type": "belongsTo",
+      "model": "Store",
+      "foreignKey": "storeId"
+    }    
+  },
+  "acls": [],
+  "methods": {}
+}

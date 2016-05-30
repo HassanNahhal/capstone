@@ -1,0 +1,2 @@
+web: slc run
+
