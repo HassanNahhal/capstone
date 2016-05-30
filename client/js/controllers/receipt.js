@@ -50,7 +50,7 @@
       if($scope.items.length < 1){ 
         $scope.delDisabled = true;
       };      
-    };   
+    };
 
     var items;
     Store.find()
@@ -141,7 +141,7 @@
       if($scope.items.length < 1){ 
         $scope.delDisabled = true;
       };      
-    };    
+    };        
 
     $scope.submitForm = function() {
       //console.log(" go into submitForm");

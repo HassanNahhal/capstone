@@ -23,7 +23,7 @@
 		    <div class="col-sm-4">
 		    	<div class="input-group">
 		    	<div class="input-group-addon">$</div>
-		    	<input type="text" class="form-control" 
+		    	<input type="number" class="form-control" 
 		    		name="itemprice" placeholder="Item price" ng-model="item.price">
 		    	</div>
 		    </div>
@@ -44,14 +44,16 @@
 			<div class="col-sm-4">
 		    	<div class="input-group">
 			    	<div class="input-group-addon">$</div>
-					<input type="text" class="form-control" name="total" 
-						placeholder="Total Price" ng-model="receipt.total">  
+					<input type="number" class="form-control" name="total" 
+						placeholder="Total Price" 
+						ng-model="receipt.total">  
 				</div>
 			</div>
 			<label class="col-sm-2 control-label">Number of items</label>
 			<div class="col-sm-4">
-				<input type="text" class="form-control" name="numberOfItem" 
-					placeholder="Number of item" ng-model="receipt.numberOfItem">      
+				<input type="number" class="form-control" name="numberOfItem" 
+					placeholder="Number of item" disabled="true" 
+					ng-model="receipt.numberOfItem=items.length">      
 			</div>
 		</div>
 		<div class="row">
