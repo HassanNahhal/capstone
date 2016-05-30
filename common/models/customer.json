@@ -3,7 +3,7 @@
   "base": "User",
   "idInjection": true,
   "options": {
-    "validateUpsert": true
+    "validateUpsert": false
   },
   "mixins": {
     "TimeStamp": true
