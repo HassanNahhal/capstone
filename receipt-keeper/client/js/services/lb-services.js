@@ -1155,73 +1155,82 @@ module.factory(
           method: "GET"
         },
 
-        // INTERNAL. Use Receipt.receiptItems.findById() instead.
-        "prototype$__findById__receiptItems": {
+        // INTERNAL. Use Receipt.items.findById() instead.
+        "prototype$__findById__items": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/Receipts/:id/receiptItems/:fk",
+          url: urlBase + "/Receipts/:id/items/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use Receipt.receiptItems.destroyById() instead.
-        "prototype$__destroyById__receiptItems": {
+        // INTERNAL. Use Receipt.items.destroyById() instead.
+        "prototype$__destroyById__items": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/Receipts/:id/receiptItems/:fk",
+          url: urlBase + "/Receipts/:id/items/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Receipt.receiptItems.updateById() instead.
-        "prototype$__updateById__receiptItems": {
+        // INTERNAL. Use Receipt.items.updateById() instead.
+        "prototype$__updateById__items": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/Receipts/:id/receiptItems/:fk",
+          url: urlBase + "/Receipts/:id/items/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use Receipt.receiptItem() instead.
-        "prototype$__get__receiptItem": {
-          url: urlBase + "/Receipts/:id/receiptItem",
-          method: "GET"
+        // INTERNAL. Use Receipt.items.link() instead.
+        "prototype$__link__items": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Receipts/:id/items/rel/:fk",
+          method: "PUT"
         },
 
-        // INTERNAL. Use Receipt.customer() instead.
-        "prototype$__get__customer": {
-          url: urlBase + "/Receipts/:id/customer",
-          method: "GET"
-        },
-
-        // INTERNAL. Use Receipt.category() instead.
-        "prototype$__get__category": {
-          url: urlBase + "/Receipts/:id/category",
-          method: "GET"
-        },
-
-        // INTERNAL. Use Receipt.receiptItems() instead.
-        "prototype$__get__receiptItems": {
-          isArray: true,
-          url: urlBase + "/Receipts/:id/receiptItems",
-          method: "GET"
-        },
-
-        // INTERNAL. Use Receipt.receiptItems.create() instead.
-        "prototype$__create__receiptItems": {
-          url: urlBase + "/Receipts/:id/receiptItems",
-          method: "POST"
-        },
-
-        // INTERNAL. Use Receipt.receiptItems.destroyAll() instead.
-        "prototype$__delete__receiptItems": {
-          url: urlBase + "/Receipts/:id/receiptItems",
+        // INTERNAL. Use Receipt.items.unlink() instead.
+        "prototype$__unlink__items": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Receipts/:id/items/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Receipt.receiptItems.count() instead.
-        "prototype$__count__receiptItems": {
-          url: urlBase + "/Receipts/:id/receiptItems/count",
+        // INTERNAL. Use Receipt.items.exists() instead.
+        "prototype$__exists__items": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Receipts/:id/items/rel/:fk",
+          method: "HEAD"
+        },
+
+        // INTERNAL. Use Receipt.items() instead.
+        "prototype$__get__items": {
+          isArray: true,
+          url: urlBase + "/Receipts/:id/items",
+          method: "GET"
+        },
+
+        // INTERNAL. Use Receipt.items.create() instead.
+        "prototype$__create__items": {
+          url: urlBase + "/Receipts/:id/items",
+          method: "POST"
+        },
+
+        // INTERNAL. Use Receipt.items.destroyAll() instead.
+        "prototype$__delete__items": {
+          url: urlBase + "/Receipts/:id/items",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Receipt.items.count() instead.
+        "prototype$__count__items": {
+          url: urlBase + "/Receipts/:id/items/count",
           method: "GET"
         },
 
@@ -1647,62 +1656,154 @@ module.factory(
           method: "POST"
         },
 
-        // INTERNAL. Use ReceiptItem.receipts.findById() instead.
-        "::findById::ReceiptItem::receipts": {
+        // INTERNAL. Use Store.receipts.findById() instead.
+        "::findById::Store::receipts": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/ReceiptItems/:id/receipts/:fk",
+          url: urlBase + "/Stores/:id/receipts/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use ReceiptItem.receipts.destroyById() instead.
-        "::destroyById::ReceiptItem::receipts": {
+        // INTERNAL. Use Store.receipts.destroyById() instead.
+        "::destroyById::Store::receipts": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/ReceiptItems/:id/receipts/:fk",
+          url: urlBase + "/Stores/:id/receipts/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use ReceiptItem.receipts.updateById() instead.
-        "::updateById::ReceiptItem::receipts": {
+        // INTERNAL. Use Store.receipts.updateById() instead.
+        "::updateById::Store::receipts": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/ReceiptItems/:id/receipts/:fk",
+          url: urlBase + "/Stores/:id/receipts/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use ReceiptItem.receipts() instead.
-        "::get::ReceiptItem::receipts": {
+        // INTERNAL. Use Store.receipts() instead.
+        "::get::Store::receipts": {
           isArray: true,
-          url: urlBase + "/ReceiptItems/:id/receipts",
+          url: urlBase + "/Stores/:id/receipts",
           method: "GET"
         },
 
-        // INTERNAL. Use ReceiptItem.receipts.create() instead.
-        "::create::ReceiptItem::receipts": {
-          url: urlBase + "/ReceiptItems/:id/receipts",
+        // INTERNAL. Use Store.receipts.create() instead.
+        "::create::Store::receipts": {
+          url: urlBase + "/Stores/:id/receipts",
           method: "POST"
         },
 
-        // INTERNAL. Use ReceiptItem.receipts.createMany() instead.
-        "::createMany::ReceiptItem::receipts": {
+        // INTERNAL. Use Store.receipts.createMany() instead.
+        "::createMany::Store::receipts": {
           isArray: true,
-          url: urlBase + "/ReceiptItems/:id/receipts",
+          url: urlBase + "/Stores/:id/receipts",
           method: "POST"
         },
 
-        // INTERNAL. Use ReceiptItem.receipts.destroyAll() instead.
-        "::delete::ReceiptItem::receipts": {
-          url: urlBase + "/ReceiptItems/:id/receipts",
+        // INTERNAL. Use Store.receipts.destroyAll() instead.
+        "::delete::Store::receipts": {
+          url: urlBase + "/Stores/:id/receipts",
           method: "DELETE"
         },
 
-        // INTERNAL. Use ReceiptItem.receipts.count() instead.
-        "::count::ReceiptItem::receipts": {
-          url: urlBase + "/ReceiptItems/:id/receipts/count",
+        // INTERNAL. Use Store.receipts.count() instead.
+        "::count::Store::receipts": {
+          url: urlBase + "/Stores/:id/receipts/count",
+          method: "GET"
+        },
+
+        // INTERNAL. Use ReceiptItem.receipt() instead.
+        "::get::ReceiptItem::receipt": {
+          url: urlBase + "/ReceiptItems/:id/receipt",
+          method: "GET"
+        },
+
+        // INTERNAL. Use Item.receipts.findById() instead.
+        "::findById::Item::receipts": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Items/:id/receipts/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use Item.receipts.destroyById() instead.
+        "::destroyById::Item::receipts": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Items/:id/receipts/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Item.receipts.updateById() instead.
+        "::updateById::Item::receipts": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Items/:id/receipts/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use Item.receipts.link() instead.
+        "::link::Item::receipts": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Items/:id/receipts/rel/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use Item.receipts.unlink() instead.
+        "::unlink::Item::receipts": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Items/:id/receipts/rel/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Item.receipts.exists() instead.
+        "::exists::Item::receipts": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Items/:id/receipts/rel/:fk",
+          method: "HEAD"
+        },
+
+        // INTERNAL. Use Item.receipts() instead.
+        "::get::Item::receipts": {
+          isArray: true,
+          url: urlBase + "/Items/:id/receipts",
+          method: "GET"
+        },
+
+        // INTERNAL. Use Item.receipts.create() instead.
+        "::create::Item::receipts": {
+          url: urlBase + "/Items/:id/receipts",
+          method: "POST"
+        },
+
+        // INTERNAL. Use Item.receipts.createMany() instead.
+        "::createMany::Item::receipts": {
+          isArray: true,
+          url: urlBase + "/Items/:id/receipts",
+          method: "POST"
+        },
+
+        // INTERNAL. Use Item.receipts.destroyAll() instead.
+        "::delete::Item::receipts": {
+          url: urlBase + "/Items/:id/receipts",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Item.receipts.count() instead.
+        "::count::Item::receipts": {
+          url: urlBase + "/Items/:id/receipts/count",
           method: "GET"
         },
 
@@ -2003,27 +2104,27 @@ module.factory(
         };
     /**
      * @ngdoc object
-     * @name lbServices.Receipt.receiptItems
-     * @header lbServices.Receipt.receiptItems
+     * @name lbServices.Receipt.items
+     * @header lbServices.Receipt.items
      * @object
      * @description
      *
-     * The object `Receipt.receiptItems` groups methods
-     * manipulating `ReceiptItem` instances related to `Receipt`.
+     * The object `Receipt.items` groups methods
+     * manipulating `Item` instances related to `Receipt`.
      *
-     * Call {@link lbServices.Receipt#receiptItems Receipt.receiptItems()}
+     * Call {@link lbServices.Receipt#items Receipt.items()}
      * to query all related instances.
      */
 
 
         /**
          * @ngdoc method
-         * @name lbServices.Receipt#receiptItems
+         * @name lbServices.Receipt#items
          * @methodOf lbServices.Receipt
          *
          * @description
          *
-         * Queries receiptItems of Receipt.
+         * Queries items of Receipt.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -2043,23 +2144,23 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `ReceiptItem` object.)
+         * This usually means the response is a `Item` object.)
          * </em>
          */
-        R.receiptItems = function() {
-          var TargetResource = $injector.get("ReceiptItem");
-          var action = TargetResource["::get::Receipt::receiptItems"];
+        R.items = function() {
+          var TargetResource = $injector.get("Item");
+          var action = TargetResource["::get::Receipt::items"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Receipt.receiptItems#count
-         * @methodOf lbServices.Receipt.receiptItems
+         * @name lbServices.Receipt.items#count
+         * @methodOf lbServices.Receipt.items
          *
          * @description
          *
-         * Counts receiptItems of Receipt.
+         * Counts items of Receipt.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -2081,20 +2182,20 @@ module.factory(
          *
          *  - `count` – `{number=}` - 
          */
-        R.receiptItems.count = function() {
-          var TargetResource = $injector.get("ReceiptItem");
-          var action = TargetResource["::count::Receipt::receiptItems"];
+        R.items.count = function() {
+          var TargetResource = $injector.get("Item");
+          var action = TargetResource["::count::Receipt::items"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Receipt.receiptItems#create
-         * @methodOf lbServices.Receipt.receiptItems
+         * @name lbServices.Receipt.items#create
+         * @methodOf lbServices.Receipt.items
          *
          * @description
          *
-         * Creates a new instance in receiptItems of this model.
+         * Creates a new instance in items of this model.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -2116,23 +2217,23 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `ReceiptItem` object.)
+         * This usually means the response is a `Item` object.)
          * </em>
          */
-        R.receiptItems.create = function() {
-          var TargetResource = $injector.get("ReceiptItem");
-          var action = TargetResource["::create::Receipt::receiptItems"];
+        R.items.create = function() {
+          var TargetResource = $injector.get("Item");
+          var action = TargetResource["::create::Receipt::items"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Receipt.receiptItems#createMany
-         * @methodOf lbServices.Receipt.receiptItems
+         * @name lbServices.Receipt.items#createMany
+         * @methodOf lbServices.Receipt.items
          *
          * @description
          *
-         * Creates a new instance in receiptItems of this model.
+         * Creates a new instance in items of this model.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -2154,23 +2255,23 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `ReceiptItem` object.)
+         * This usually means the response is a `Item` object.)
          * </em>
          */
-        R.receiptItems.createMany = function() {
-          var TargetResource = $injector.get("ReceiptItem");
-          var action = TargetResource["::createMany::Receipt::receiptItems"];
+        R.items.createMany = function() {
+          var TargetResource = $injector.get("Item");
+          var action = TargetResource["::createMany::Receipt::items"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Receipt.receiptItems#destroyAll
-         * @methodOf lbServices.Receipt.receiptItems
+         * @name lbServices.Receipt.items#destroyAll
+         * @methodOf lbServices.Receipt.items
          *
          * @description
          *
-         * Deletes all receiptItems of this model.
+         * Deletes all items of this model.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -2188,26 +2289,26 @@ module.factory(
          *
          * This method returns no data.
          */
-        R.receiptItems.destroyAll = function() {
-          var TargetResource = $injector.get("ReceiptItem");
-          var action = TargetResource["::delete::Receipt::receiptItems"];
+        R.items.destroyAll = function() {
+          var TargetResource = $injector.get("Item");
+          var action = TargetResource["::delete::Receipt::items"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Receipt.receiptItems#destroyById
-         * @methodOf lbServices.Receipt.receiptItems
+         * @name lbServices.Receipt.items#destroyById
+         * @methodOf lbServices.Receipt.items
          *
          * @description
          *
-         * Delete a related item by id for receiptItems.
+         * Delete a related item by id for items.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `fk` – `{*}` - Foreign key for receiptItems
+         *  - `fk` – `{*}` - Foreign key for items
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -2221,26 +2322,26 @@ module.factory(
          *
          * This method returns no data.
          */
-        R.receiptItems.destroyById = function() {
-          var TargetResource = $injector.get("ReceiptItem");
-          var action = TargetResource["::destroyById::Receipt::receiptItems"];
+        R.items.destroyById = function() {
+          var TargetResource = $injector.get("Item");
+          var action = TargetResource["::destroyById::Receipt::items"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Receipt.receiptItems#findById
-         * @methodOf lbServices.Receipt.receiptItems
+         * @name lbServices.Receipt.items#exists
+         * @methodOf lbServices.Receipt.items
          *
          * @description
          *
-         * Find a related item by id for receiptItems.
+         * Check the existence of items relation to an item by id.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `fk` – `{*}` - Foreign key for receiptItems
+         *  - `fk` – `{*}` - Foreign key for items
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -2254,29 +2355,65 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `ReceiptItem` object.)
+         * This usually means the response is a `Item` object.)
          * </em>
          */
-        R.receiptItems.findById = function() {
-          var TargetResource = $injector.get("ReceiptItem");
-          var action = TargetResource["::findById::Receipt::receiptItems"];
+        R.items.exists = function() {
+          var TargetResource = $injector.get("Item");
+          var action = TargetResource["::exists::Receipt::items"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Receipt.receiptItems#updateById
-         * @methodOf lbServices.Receipt.receiptItems
+         * @name lbServices.Receipt.items#findById
+         * @methodOf lbServices.Receipt.items
          *
          * @description
          *
-         * Update a related item by id for receiptItems.
+         * Find a related item by id for items.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `fk` – `{*}` - Foreign key for receiptItems
+         *  - `fk` – `{*}` - Foreign key for items
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Item` object.)
+         * </em>
+         */
+        R.items.findById = function() {
+          var TargetResource = $injector.get("Item");
+          var action = TargetResource["::findById::Receipt::items"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Receipt.items#link
+         * @methodOf lbServices.Receipt.items
+         *
+         * @description
+         *
+         * Add a related item by id for items.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for items
          *
          * @param {Object} postData Request data.
          *
@@ -2294,29 +2431,66 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `ReceiptItem` object.)
+         * This usually means the response is a `Item` object.)
          * </em>
          */
-        R.receiptItems.updateById = function() {
-          var TargetResource = $injector.get("ReceiptItem");
-          var action = TargetResource["::updateById::Receipt::receiptItems"];
+        R.items.link = function() {
+          var TargetResource = $injector.get("Item");
+          var action = TargetResource["::link::Receipt::items"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Receipt#receiptItem
-         * @methodOf lbServices.Receipt
+         * @name lbServices.Receipt.items#unlink
+         * @methodOf lbServices.Receipt.items
          *
          * @description
          *
-         * Fetches belongsTo relation receiptItem.
+         * Remove the items relation to an item by id.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `refresh` – `{boolean=}` - 
+         *  - `fk` – `{*}` - Foreign key for items
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.items.unlink = function() {
+          var TargetResource = $injector.get("Item");
+          var action = TargetResource["::unlink::Receipt::items"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Receipt.items#updateById
+         * @methodOf lbServices.Receipt.items
+         *
+         * @description
+         *
+         * Update a related item by id for items.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for items
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -2330,84 +2504,12 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `ReceiptItem` object.)
+         * This usually means the response is a `Item` object.)
          * </em>
          */
-        R.receiptItem = function() {
-          var TargetResource = $injector.get("ReceiptItem");
-          var action = TargetResource["::get::Receipt::receiptItem"];
-          return action.apply(R, arguments);
-        };
-
-        /**
-         * @ngdoc method
-         * @name lbServices.Receipt#customer
-         * @methodOf lbServices.Receipt
-         *
-         * @description
-         *
-         * Fetches belongsTo relation customer.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - PersistedModel id
-         *
-         *  - `refresh` – `{boolean=}` - 
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `Customer` object.)
-         * </em>
-         */
-        R.customer = function() {
-          var TargetResource = $injector.get("Customer");
-          var action = TargetResource["::get::Receipt::customer"];
-          return action.apply(R, arguments);
-        };
-
-        /**
-         * @ngdoc method
-         * @name lbServices.Receipt#category
-         * @methodOf lbServices.Receipt
-         *
-         * @description
-         *
-         * Fetches belongsTo relation category.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - PersistedModel id
-         *
-         *  - `refresh` – `{boolean=}` - 
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `Category` object.)
-         * </em>
-         */
-        R.category = function() {
-          var TargetResource = $injector.get("Category");
-          var action = TargetResource["::get::Receipt::category"];
+        R.items.updateById = function() {
+          var TargetResource = $injector.get("Item");
+          var action = TargetResource["::updateById::Receipt::items"];
           return action.apply(R, arguments);
         };
 
@@ -2438,6 +2540,58 @@ module.factory(
       urlBase + "/Stores/:id",
       { 'id': '@id' },
       {
+
+        // INTERNAL. Use Store.receipts.findById() instead.
+        "prototype$__findById__receipts": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Stores/:id/receipts/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use Store.receipts.destroyById() instead.
+        "prototype$__destroyById__receipts": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Stores/:id/receipts/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Store.receipts.updateById() instead.
+        "prototype$__updateById__receipts": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Stores/:id/receipts/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use Store.receipts() instead.
+        "prototype$__get__receipts": {
+          isArray: true,
+          url: urlBase + "/Stores/:id/receipts",
+          method: "GET"
+        },
+
+        // INTERNAL. Use Store.receipts.create() instead.
+        "prototype$__create__receipts": {
+          url: urlBase + "/Stores/:id/receipts",
+          method: "POST"
+        },
+
+        // INTERNAL. Use Store.receipts.destroyAll() instead.
+        "prototype$__delete__receipts": {
+          url: urlBase + "/Stores/:id/receipts",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Store.receipts.count() instead.
+        "prototype$__count__receipts": {
+          url: urlBase + "/Stores/:id/receipts/count",
+          method: "GET"
+        },
 
         /**
          * @ngdoc method
@@ -3008,6 +3162,307 @@ module.factory(
     */
     R.modelName = "Store";
 
+    /**
+     * @ngdoc object
+     * @name lbServices.Store.receipts
+     * @header lbServices.Store.receipts
+     * @object
+     * @description
+     *
+     * The object `Store.receipts` groups methods
+     * manipulating `Receipt` instances related to `Store`.
+     *
+     * Call {@link lbServices.Store#receipts Store.receipts()}
+     * to query all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Store#receipts
+         * @methodOf lbServices.Store
+         *
+         * @description
+         *
+         * Queries receipts of Store.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Receipt` object.)
+         * </em>
+         */
+        R.receipts = function() {
+          var TargetResource = $injector.get("Receipt");
+          var action = TargetResource["::get::Store::receipts"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Store.receipts#count
+         * @methodOf lbServices.Store.receipts
+         *
+         * @description
+         *
+         * Counts receipts of Store.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.receipts.count = function() {
+          var TargetResource = $injector.get("Receipt");
+          var action = TargetResource["::count::Store::receipts"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Store.receipts#create
+         * @methodOf lbServices.Store.receipts
+         *
+         * @description
+         *
+         * Creates a new instance in receipts of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Receipt` object.)
+         * </em>
+         */
+        R.receipts.create = function() {
+          var TargetResource = $injector.get("Receipt");
+          var action = TargetResource["::create::Store::receipts"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Store.receipts#createMany
+         * @methodOf lbServices.Store.receipts
+         *
+         * @description
+         *
+         * Creates a new instance in receipts of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Receipt` object.)
+         * </em>
+         */
+        R.receipts.createMany = function() {
+          var TargetResource = $injector.get("Receipt");
+          var action = TargetResource["::createMany::Store::receipts"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Store.receipts#destroyAll
+         * @methodOf lbServices.Store.receipts
+         *
+         * @description
+         *
+         * Deletes all receipts of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.receipts.destroyAll = function() {
+          var TargetResource = $injector.get("Receipt");
+          var action = TargetResource["::delete::Store::receipts"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Store.receipts#destroyById
+         * @methodOf lbServices.Store.receipts
+         *
+         * @description
+         *
+         * Delete a related item by id for receipts.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for receipts
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.receipts.destroyById = function() {
+          var TargetResource = $injector.get("Receipt");
+          var action = TargetResource["::destroyById::Store::receipts"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Store.receipts#findById
+         * @methodOf lbServices.Store.receipts
+         *
+         * @description
+         *
+         * Find a related item by id for receipts.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for receipts
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Receipt` object.)
+         * </em>
+         */
+        R.receipts.findById = function() {
+          var TargetResource = $injector.get("Receipt");
+          var action = TargetResource["::findById::Store::receipts"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Store.receipts#updateById
+         * @methodOf lbServices.Store.receipts
+         *
+         * @description
+         *
+         * Update a related item by id for receipts.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for receipts
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Receipt` object.)
+         * </em>
+         */
+        R.receipts.updateById = function() {
+          var TargetResource = $injector.get("Receipt");
+          var action = TargetResource["::updateById::Store::receipts"];
+          return action.apply(R, arguments);
+        };
 
     return R;
   }]);
@@ -3037,107 +3492,15 @@ module.factory(
       { 'id': '@id' },
       {
 
-        // INTERNAL. Use ReceiptItem.receipts.findById() instead.
-        "prototype$__findById__receipts": {
-          params: {
-          'fk': '@fk'
-          },
-          url: urlBase + "/ReceiptItems/:id/receipts/:fk",
+        // INTERNAL. Use ReceiptItem.receipt() instead.
+        "prototype$__get__receipt": {
+          url: urlBase + "/ReceiptItems/:id/receipt",
           method: "GET"
         },
 
-        // INTERNAL. Use ReceiptItem.receipts.destroyById() instead.
-        "prototype$__destroyById__receipts": {
-          params: {
-          'fk': '@fk'
-          },
-          url: urlBase + "/ReceiptItems/:id/receipts/:fk",
-          method: "DELETE"
-        },
-
-        // INTERNAL. Use ReceiptItem.receipts.updateById() instead.
-        "prototype$__updateById__receipts": {
-          params: {
-          'fk': '@fk'
-          },
-          url: urlBase + "/ReceiptItems/:id/receipts/:fk",
-          method: "PUT"
-        },
-
-        // INTERNAL. Use ReceiptItem.items.findById() instead.
-        "prototype$__findById__items": {
-          params: {
-          'fk': '@fk'
-          },
-          url: urlBase + "/ReceiptItems/:id/items/:fk",
-          method: "GET"
-        },
-
-        // INTERNAL. Use ReceiptItem.items.destroyById() instead.
-        "prototype$__destroyById__items": {
-          params: {
-          'fk': '@fk'
-          },
-          url: urlBase + "/ReceiptItems/:id/items/:fk",
-          method: "DELETE"
-        },
-
-        // INTERNAL. Use ReceiptItem.items.updateById() instead.
-        "prototype$__updateById__items": {
-          params: {
-          'fk': '@fk'
-          },
-          url: urlBase + "/ReceiptItems/:id/items/:fk",
-          method: "PUT"
-        },
-
-        // INTERNAL. Use ReceiptItem.receipts() instead.
-        "prototype$__get__receipts": {
-          isArray: true,
-          url: urlBase + "/ReceiptItems/:id/receipts",
-          method: "GET"
-        },
-
-        // INTERNAL. Use ReceiptItem.receipts.create() instead.
-        "prototype$__create__receipts": {
-          url: urlBase + "/ReceiptItems/:id/receipts",
-          method: "POST"
-        },
-
-        // INTERNAL. Use ReceiptItem.receipts.destroyAll() instead.
-        "prototype$__delete__receipts": {
-          url: urlBase + "/ReceiptItems/:id/receipts",
-          method: "DELETE"
-        },
-
-        // INTERNAL. Use ReceiptItem.receipts.count() instead.
-        "prototype$__count__receipts": {
-          url: urlBase + "/ReceiptItems/:id/receipts/count",
-          method: "GET"
-        },
-
-        // INTERNAL. Use ReceiptItem.items() instead.
-        "prototype$__get__items": {
-          isArray: true,
-          url: urlBase + "/ReceiptItems/:id/items",
-          method: "GET"
-        },
-
-        // INTERNAL. Use ReceiptItem.items.create() instead.
-        "prototype$__create__items": {
-          url: urlBase + "/ReceiptItems/:id/items",
-          method: "POST"
-        },
-
-        // INTERNAL. Use ReceiptItem.items.destroyAll() instead.
-        "prototype$__delete__items": {
-          url: urlBase + "/ReceiptItems/:id/items",
-          method: "DELETE"
-        },
-
-        // INTERNAL. Use ReceiptItem.items.count() instead.
-        "prototype$__count__items": {
-          url: urlBase + "/ReceiptItems/:id/items/count",
+        // INTERNAL. Use ReceiptItem.item() instead.
+        "prototype$__get__item": {
+          url: urlBase + "/ReceiptItems/:id/item",
           method: "GET"
         },
 
@@ -3562,77 +3925,6 @@ module.factory(
           url: urlBase + "/ReceiptItems/change-stream",
           method: "POST"
         },
-
-        // INTERNAL. Use Receipt.receiptItems.findById() instead.
-        "::findById::Receipt::receiptItems": {
-          params: {
-          'fk': '@fk'
-          },
-          url: urlBase + "/Receipts/:id/receiptItems/:fk",
-          method: "GET"
-        },
-
-        // INTERNAL. Use Receipt.receiptItems.destroyById() instead.
-        "::destroyById::Receipt::receiptItems": {
-          params: {
-          'fk': '@fk'
-          },
-          url: urlBase + "/Receipts/:id/receiptItems/:fk",
-          method: "DELETE"
-        },
-
-        // INTERNAL. Use Receipt.receiptItems.updateById() instead.
-        "::updateById::Receipt::receiptItems": {
-          params: {
-          'fk': '@fk'
-          },
-          url: urlBase + "/Receipts/:id/receiptItems/:fk",
-          method: "PUT"
-        },
-
-        // INTERNAL. Use Receipt.receiptItem() instead.
-        "::get::Receipt::receiptItem": {
-          url: urlBase + "/Receipts/:id/receiptItem",
-          method: "GET"
-        },
-
-        // INTERNAL. Use Receipt.receiptItems() instead.
-        "::get::Receipt::receiptItems": {
-          isArray: true,
-          url: urlBase + "/Receipts/:id/receiptItems",
-          method: "GET"
-        },
-
-        // INTERNAL. Use Receipt.receiptItems.create() instead.
-        "::create::Receipt::receiptItems": {
-          url: urlBase + "/Receipts/:id/receiptItems",
-          method: "POST"
-        },
-
-        // INTERNAL. Use Receipt.receiptItems.createMany() instead.
-        "::createMany::Receipt::receiptItems": {
-          isArray: true,
-          url: urlBase + "/Receipts/:id/receiptItems",
-          method: "POST"
-        },
-
-        // INTERNAL. Use Receipt.receiptItems.destroyAll() instead.
-        "::delete::Receipt::receiptItems": {
-          url: urlBase + "/Receipts/:id/receiptItems",
-          method: "DELETE"
-        },
-
-        // INTERNAL. Use Receipt.receiptItems.count() instead.
-        "::count::Receipt::receiptItems": {
-          url: urlBase + "/Receipts/:id/receiptItems/count",
-          method: "GET"
-        },
-
-        // INTERNAL. Use Item.receiptItem() instead.
-        "::get::Item::receiptItem": {
-          url: urlBase + "/Items/:id/receiptItem",
-          method: "GET"
-        },
       }
     );
 
@@ -3775,108 +4067,21 @@ module.factory(
     */
     R.modelName = "ReceiptItem";
 
-    /**
-     * @ngdoc object
-     * @name lbServices.ReceiptItem.receipts
-     * @header lbServices.ReceiptItem.receipts
-     * @object
-     * @description
-     *
-     * The object `ReceiptItem.receipts` groups methods
-     * manipulating `Receipt` instances related to `ReceiptItem`.
-     *
-     * Call {@link lbServices.ReceiptItem#receipts ReceiptItem.receipts()}
-     * to query all related instances.
-     */
-
 
         /**
          * @ngdoc method
-         * @name lbServices.ReceiptItem#receipts
+         * @name lbServices.ReceiptItem#receipt
          * @methodOf lbServices.ReceiptItem
          *
          * @description
          *
-         * Queries receipts of ReceiptItem.
+         * Fetches belongsTo relation receipt.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `filter` – `{object=}` - 
-         *
-         * @param {function(Array.<Object>,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Array.<Object>} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `Receipt` object.)
-         * </em>
-         */
-        R.receipts = function() {
-          var TargetResource = $injector.get("Receipt");
-          var action = TargetResource["::get::ReceiptItem::receipts"];
-          return action.apply(R, arguments);
-        };
-
-        /**
-         * @ngdoc method
-         * @name lbServices.ReceiptItem.receipts#count
-         * @methodOf lbServices.ReceiptItem.receipts
-         *
-         * @description
-         *
-         * Counts receipts of ReceiptItem.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - PersistedModel id
-         *
-         *  - `where` – `{object=}` - Criteria to match model instances
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * Data properties:
-         *
-         *  - `count` – `{number=}` - 
-         */
-        R.receipts.count = function() {
-          var TargetResource = $injector.get("Receipt");
-          var action = TargetResource["::count::ReceiptItem::receipts"];
-          return action.apply(R, arguments);
-        };
-
-        /**
-         * @ngdoc method
-         * @name lbServices.ReceiptItem.receipts#create
-         * @methodOf lbServices.ReceiptItem.receipts
-         *
-         * @description
-         *
-         * Creates a new instance in receipts of this model.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - PersistedModel id
-         *
-         * @param {Object} postData Request data.
-         *
-         * This method expects a subset of model properties as request parameters.
+         *  - `refresh` – `{boolean=}` - 
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -3893,291 +4098,26 @@ module.factory(
          * This usually means the response is a `Receipt` object.)
          * </em>
          */
-        R.receipts.create = function() {
+        R.receipt = function() {
           var TargetResource = $injector.get("Receipt");
-          var action = TargetResource["::create::ReceiptItem::receipts"];
+          var action = TargetResource["::get::ReceiptItem::receipt"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.ReceiptItem.receipts#createMany
-         * @methodOf lbServices.ReceiptItem.receipts
-         *
-         * @description
-         *
-         * Creates a new instance in receipts of this model.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - PersistedModel id
-         *
-         * @param {Object} postData Request data.
-         *
-         * This method expects a subset of model properties as request parameters.
-         *
-         * @param {function(Array.<Object>,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Array.<Object>} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `Receipt` object.)
-         * </em>
-         */
-        R.receipts.createMany = function() {
-          var TargetResource = $injector.get("Receipt");
-          var action = TargetResource["::createMany::ReceiptItem::receipts"];
-          return action.apply(R, arguments);
-        };
-
-        /**
-         * @ngdoc method
-         * @name lbServices.ReceiptItem.receipts#destroyAll
-         * @methodOf lbServices.ReceiptItem.receipts
-         *
-         * @description
-         *
-         * Deletes all receipts of this model.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - PersistedModel id
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * This method returns no data.
-         */
-        R.receipts.destroyAll = function() {
-          var TargetResource = $injector.get("Receipt");
-          var action = TargetResource["::delete::ReceiptItem::receipts"];
-          return action.apply(R, arguments);
-        };
-
-        /**
-         * @ngdoc method
-         * @name lbServices.ReceiptItem.receipts#destroyById
-         * @methodOf lbServices.ReceiptItem.receipts
-         *
-         * @description
-         *
-         * Delete a related item by id for receipts.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - PersistedModel id
-         *
-         *  - `fk` – `{*}` - Foreign key for receipts
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * This method returns no data.
-         */
-        R.receipts.destroyById = function() {
-          var TargetResource = $injector.get("Receipt");
-          var action = TargetResource["::destroyById::ReceiptItem::receipts"];
-          return action.apply(R, arguments);
-        };
-
-        /**
-         * @ngdoc method
-         * @name lbServices.ReceiptItem.receipts#findById
-         * @methodOf lbServices.ReceiptItem.receipts
-         *
-         * @description
-         *
-         * Find a related item by id for receipts.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - PersistedModel id
-         *
-         *  - `fk` – `{*}` - Foreign key for receipts
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `Receipt` object.)
-         * </em>
-         */
-        R.receipts.findById = function() {
-          var TargetResource = $injector.get("Receipt");
-          var action = TargetResource["::findById::ReceiptItem::receipts"];
-          return action.apply(R, arguments);
-        };
-
-        /**
-         * @ngdoc method
-         * @name lbServices.ReceiptItem.receipts#updateById
-         * @methodOf lbServices.ReceiptItem.receipts
-         *
-         * @description
-         *
-         * Update a related item by id for receipts.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - PersistedModel id
-         *
-         *  - `fk` – `{*}` - Foreign key for receipts
-         *
-         * @param {Object} postData Request data.
-         *
-         * This method expects a subset of model properties as request parameters.
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `Receipt` object.)
-         * </em>
-         */
-        R.receipts.updateById = function() {
-          var TargetResource = $injector.get("Receipt");
-          var action = TargetResource["::updateById::ReceiptItem::receipts"];
-          return action.apply(R, arguments);
-        };
-    /**
-     * @ngdoc object
-     * @name lbServices.ReceiptItem.items
-     * @header lbServices.ReceiptItem.items
-     * @object
-     * @description
-     *
-     * The object `ReceiptItem.items` groups methods
-     * manipulating `Item` instances related to `ReceiptItem`.
-     *
-     * Call {@link lbServices.ReceiptItem#items ReceiptItem.items()}
-     * to query all related instances.
-     */
-
-
-        /**
-         * @ngdoc method
-         * @name lbServices.ReceiptItem#items
+         * @name lbServices.ReceiptItem#item
          * @methodOf lbServices.ReceiptItem
          *
          * @description
          *
-         * Queries items of ReceiptItem.
+         * Fetches belongsTo relation item.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `filter` – `{object=}` - 
-         *
-         * @param {function(Array.<Object>,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Array.<Object>} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `Item` object.)
-         * </em>
-         */
-        R.items = function() {
-          var TargetResource = $injector.get("Item");
-          var action = TargetResource["::get::ReceiptItem::items"];
-          return action.apply(R, arguments);
-        };
-
-        /**
-         * @ngdoc method
-         * @name lbServices.ReceiptItem.items#count
-         * @methodOf lbServices.ReceiptItem.items
-         *
-         * @description
-         *
-         * Counts items of ReceiptItem.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - PersistedModel id
-         *
-         *  - `where` – `{object=}` - Criteria to match model instances
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * Data properties:
-         *
-         *  - `count` – `{number=}` - 
-         */
-        R.items.count = function() {
-          var TargetResource = $injector.get("Item");
-          var action = TargetResource["::count::ReceiptItem::items"];
-          return action.apply(R, arguments);
-        };
-
-        /**
-         * @ngdoc method
-         * @name lbServices.ReceiptItem.items#create
-         * @methodOf lbServices.ReceiptItem.items
-         *
-         * @description
-         *
-         * Creates a new instance in items of this model.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - PersistedModel id
-         *
-         * @param {Object} postData Request data.
-         *
-         * This method expects a subset of model properties as request parameters.
+         *  - `refresh` – `{boolean=}` - 
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -4194,187 +4134,9 @@ module.factory(
          * This usually means the response is a `Item` object.)
          * </em>
          */
-        R.items.create = function() {
+        R.item = function() {
           var TargetResource = $injector.get("Item");
-          var action = TargetResource["::create::ReceiptItem::items"];
-          return action.apply(R, arguments);
-        };
-
-        /**
-         * @ngdoc method
-         * @name lbServices.ReceiptItem.items#createMany
-         * @methodOf lbServices.ReceiptItem.items
-         *
-         * @description
-         *
-         * Creates a new instance in items of this model.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - PersistedModel id
-         *
-         * @param {Object} postData Request data.
-         *
-         * This method expects a subset of model properties as request parameters.
-         *
-         * @param {function(Array.<Object>,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Array.<Object>} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `Item` object.)
-         * </em>
-         */
-        R.items.createMany = function() {
-          var TargetResource = $injector.get("Item");
-          var action = TargetResource["::createMany::ReceiptItem::items"];
-          return action.apply(R, arguments);
-        };
-
-        /**
-         * @ngdoc method
-         * @name lbServices.ReceiptItem.items#destroyAll
-         * @methodOf lbServices.ReceiptItem.items
-         *
-         * @description
-         *
-         * Deletes all items of this model.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - PersistedModel id
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * This method returns no data.
-         */
-        R.items.destroyAll = function() {
-          var TargetResource = $injector.get("Item");
-          var action = TargetResource["::delete::ReceiptItem::items"];
-          return action.apply(R, arguments);
-        };
-
-        /**
-         * @ngdoc method
-         * @name lbServices.ReceiptItem.items#destroyById
-         * @methodOf lbServices.ReceiptItem.items
-         *
-         * @description
-         *
-         * Delete a related item by id for items.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - PersistedModel id
-         *
-         *  - `fk` – `{*}` - Foreign key for items
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * This method returns no data.
-         */
-        R.items.destroyById = function() {
-          var TargetResource = $injector.get("Item");
-          var action = TargetResource["::destroyById::ReceiptItem::items"];
-          return action.apply(R, arguments);
-        };
-
-        /**
-         * @ngdoc method
-         * @name lbServices.ReceiptItem.items#findById
-         * @methodOf lbServices.ReceiptItem.items
-         *
-         * @description
-         *
-         * Find a related item by id for items.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - PersistedModel id
-         *
-         *  - `fk` – `{*}` - Foreign key for items
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `Item` object.)
-         * </em>
-         */
-        R.items.findById = function() {
-          var TargetResource = $injector.get("Item");
-          var action = TargetResource["::findById::ReceiptItem::items"];
-          return action.apply(R, arguments);
-        };
-
-        /**
-         * @ngdoc method
-         * @name lbServices.ReceiptItem.items#updateById
-         * @methodOf lbServices.ReceiptItem.items
-         *
-         * @description
-         *
-         * Update a related item by id for items.
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *  - `id` – `{*}` - PersistedModel id
-         *
-         *  - `fk` – `{*}` - Foreign key for items
-         *
-         * @param {Object} postData Request data.
-         *
-         * This method expects a subset of model properties as request parameters.
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * <em>
-         * (The remote method definition does not provide any description.
-         * This usually means the response is a `Item` object.)
-         * </em>
-         */
-        R.items.updateById = function() {
-          var TargetResource = $injector.get("Item");
-          var action = TargetResource["::updateById::ReceiptItem::items"];
+          var action = TargetResource["::get::ReceiptItem::item"];
           return action.apply(R, arguments);
         };
 
@@ -4406,9 +4168,82 @@ module.factory(
       { 'id': '@id' },
       {
 
-        // INTERNAL. Use Item.receiptItem() instead.
-        "prototype$__get__receiptItem": {
-          url: urlBase + "/Items/:id/receiptItem",
+        // INTERNAL. Use Item.receipts.findById() instead.
+        "prototype$__findById__receipts": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Items/:id/receipts/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use Item.receipts.destroyById() instead.
+        "prototype$__destroyById__receipts": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Items/:id/receipts/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Item.receipts.updateById() instead.
+        "prototype$__updateById__receipts": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Items/:id/receipts/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use Item.receipts.link() instead.
+        "prototype$__link__receipts": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Items/:id/receipts/rel/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use Item.receipts.unlink() instead.
+        "prototype$__unlink__receipts": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Items/:id/receipts/rel/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Item.receipts.exists() instead.
+        "prototype$__exists__receipts": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Items/:id/receipts/rel/:fk",
+          method: "HEAD"
+        },
+
+        // INTERNAL. Use Item.receipts() instead.
+        "prototype$__get__receipts": {
+          isArray: true,
+          url: urlBase + "/Items/:id/receipts",
+          method: "GET"
+        },
+
+        // INTERNAL. Use Item.receipts.create() instead.
+        "prototype$__create__receipts": {
+          url: urlBase + "/Items/:id/receipts",
+          method: "POST"
+        },
+
+        // INTERNAL. Use Item.receipts.destroyAll() instead.
+        "prototype$__delete__receipts": {
+          url: urlBase + "/Items/:id/receipts",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Item.receipts.count() instead.
+        "prototype$__count__receipts": {
+          url: urlBase + "/Items/:id/receipts/count",
           method: "GET"
         },
 
@@ -4834,62 +4669,95 @@ module.factory(
           method: "POST"
         },
 
-        // INTERNAL. Use ReceiptItem.items.findById() instead.
-        "::findById::ReceiptItem::items": {
+        // INTERNAL. Use Receipt.items.findById() instead.
+        "::findById::Receipt::items": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/ReceiptItems/:id/items/:fk",
+          url: urlBase + "/Receipts/:id/items/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use ReceiptItem.items.destroyById() instead.
-        "::destroyById::ReceiptItem::items": {
+        // INTERNAL. Use Receipt.items.destroyById() instead.
+        "::destroyById::Receipt::items": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/ReceiptItems/:id/items/:fk",
+          url: urlBase + "/Receipts/:id/items/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use ReceiptItem.items.updateById() instead.
-        "::updateById::ReceiptItem::items": {
+        // INTERNAL. Use Receipt.items.updateById() instead.
+        "::updateById::Receipt::items": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/ReceiptItems/:id/items/:fk",
+          url: urlBase + "/Receipts/:id/items/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use ReceiptItem.items() instead.
-        "::get::ReceiptItem::items": {
-          isArray: true,
-          url: urlBase + "/ReceiptItems/:id/items",
-          method: "GET"
+        // INTERNAL. Use Receipt.items.link() instead.
+        "::link::Receipt::items": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Receipts/:id/items/rel/:fk",
+          method: "PUT"
         },
 
-        // INTERNAL. Use ReceiptItem.items.create() instead.
-        "::create::ReceiptItem::items": {
-          url: urlBase + "/ReceiptItems/:id/items",
-          method: "POST"
-        },
-
-        // INTERNAL. Use ReceiptItem.items.createMany() instead.
-        "::createMany::ReceiptItem::items": {
-          isArray: true,
-          url: urlBase + "/ReceiptItems/:id/items",
-          method: "POST"
-        },
-
-        // INTERNAL. Use ReceiptItem.items.destroyAll() instead.
-        "::delete::ReceiptItem::items": {
-          url: urlBase + "/ReceiptItems/:id/items",
+        // INTERNAL. Use Receipt.items.unlink() instead.
+        "::unlink::Receipt::items": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Receipts/:id/items/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use ReceiptItem.items.count() instead.
-        "::count::ReceiptItem::items": {
-          url: urlBase + "/ReceiptItems/:id/items/count",
+        // INTERNAL. Use Receipt.items.exists() instead.
+        "::exists::Receipt::items": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Receipts/:id/items/rel/:fk",
+          method: "HEAD"
+        },
+
+        // INTERNAL. Use Receipt.items() instead.
+        "::get::Receipt::items": {
+          isArray: true,
+          url: urlBase + "/Receipts/:id/items",
+          method: "GET"
+        },
+
+        // INTERNAL. Use Receipt.items.create() instead.
+        "::create::Receipt::items": {
+          url: urlBase + "/Receipts/:id/items",
+          method: "POST"
+        },
+
+        // INTERNAL. Use Receipt.items.createMany() instead.
+        "::createMany::Receipt::items": {
+          isArray: true,
+          url: urlBase + "/Receipts/:id/items",
+          method: "POST"
+        },
+
+        // INTERNAL. Use Receipt.items.destroyAll() instead.
+        "::delete::Receipt::items": {
+          url: urlBase + "/Receipts/:id/items",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Receipt.items.count() instead.
+        "::count::Receipt::items": {
+          url: urlBase + "/Receipts/:id/items/count",
+          method: "GET"
+        },
+
+        // INTERNAL. Use ReceiptItem.item() instead.
+        "::get::ReceiptItem::item": {
+          url: urlBase + "/ReceiptItems/:id/item",
           method: "GET"
         },
       }
@@ -5034,21 +4902,108 @@ module.factory(
     */
     R.modelName = "Item";
 
+    /**
+     * @ngdoc object
+     * @name lbServices.Item.receipts
+     * @header lbServices.Item.receipts
+     * @object
+     * @description
+     *
+     * The object `Item.receipts` groups methods
+     * manipulating `Receipt` instances related to `Item`.
+     *
+     * Call {@link lbServices.Item#receipts Item.receipts()}
+     * to query all related instances.
+     */
+
 
         /**
          * @ngdoc method
-         * @name lbServices.Item#receiptItem
+         * @name lbServices.Item#receipts
          * @methodOf lbServices.Item
          *
          * @description
          *
-         * Fetches belongsTo relation receiptItem.
+         * Queries receipts of Item.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `refresh` – `{boolean=}` - 
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Receipt` object.)
+         * </em>
+         */
+        R.receipts = function() {
+          var TargetResource = $injector.get("Receipt");
+          var action = TargetResource["::get::Item::receipts"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Item.receipts#count
+         * @methodOf lbServices.Item.receipts
+         *
+         * @description
+         *
+         * Counts receipts of Item.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.receipts.count = function() {
+          var TargetResource = $injector.get("Receipt");
+          var action = TargetResource["::count::Item::receipts"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Item.receipts#create
+         * @methodOf lbServices.Item.receipts
+         *
+         * @description
+         *
+         * Creates a new instance in receipts of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -5062,12 +5017,299 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `ReceiptItem` object.)
+         * This usually means the response is a `Receipt` object.)
          * </em>
          */
-        R.receiptItem = function() {
-          var TargetResource = $injector.get("ReceiptItem");
-          var action = TargetResource["::get::Item::receiptItem"];
+        R.receipts.create = function() {
+          var TargetResource = $injector.get("Receipt");
+          var action = TargetResource["::create::Item::receipts"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Item.receipts#createMany
+         * @methodOf lbServices.Item.receipts
+         *
+         * @description
+         *
+         * Creates a new instance in receipts of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Receipt` object.)
+         * </em>
+         */
+        R.receipts.createMany = function() {
+          var TargetResource = $injector.get("Receipt");
+          var action = TargetResource["::createMany::Item::receipts"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Item.receipts#destroyAll
+         * @methodOf lbServices.Item.receipts
+         *
+         * @description
+         *
+         * Deletes all receipts of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.receipts.destroyAll = function() {
+          var TargetResource = $injector.get("Receipt");
+          var action = TargetResource["::delete::Item::receipts"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Item.receipts#destroyById
+         * @methodOf lbServices.Item.receipts
+         *
+         * @description
+         *
+         * Delete a related item by id for receipts.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for receipts
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.receipts.destroyById = function() {
+          var TargetResource = $injector.get("Receipt");
+          var action = TargetResource["::destroyById::Item::receipts"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Item.receipts#exists
+         * @methodOf lbServices.Item.receipts
+         *
+         * @description
+         *
+         * Check the existence of receipts relation to an item by id.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for receipts
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Receipt` object.)
+         * </em>
+         */
+        R.receipts.exists = function() {
+          var TargetResource = $injector.get("Receipt");
+          var action = TargetResource["::exists::Item::receipts"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Item.receipts#findById
+         * @methodOf lbServices.Item.receipts
+         *
+         * @description
+         *
+         * Find a related item by id for receipts.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for receipts
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Receipt` object.)
+         * </em>
+         */
+        R.receipts.findById = function() {
+          var TargetResource = $injector.get("Receipt");
+          var action = TargetResource["::findById::Item::receipts"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Item.receipts#link
+         * @methodOf lbServices.Item.receipts
+         *
+         * @description
+         *
+         * Add a related item by id for receipts.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for receipts
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Receipt` object.)
+         * </em>
+         */
+        R.receipts.link = function() {
+          var TargetResource = $injector.get("Receipt");
+          var action = TargetResource["::link::Item::receipts"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Item.receipts#unlink
+         * @methodOf lbServices.Item.receipts
+         *
+         * @description
+         *
+         * Remove the receipts relation to an item by id.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for receipts
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.receipts.unlink = function() {
+          var TargetResource = $injector.get("Receipt");
+          var action = TargetResource["::unlink::Item::receipts"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Item.receipts#updateById
+         * @methodOf lbServices.Item.receipts
+         *
+         * @description
+         *
+         * Update a related item by id for receipts.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for receipts
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Receipt` object.)
+         * </em>
+         */
+        R.receipts.updateById = function() {
+          var TargetResource = $injector.get("Receipt");
+          var action = TargetResource["::updateById::Item::receipts"];
           return action.apply(R, arguments);
         };
 
@@ -6949,12 +7191,6 @@ module.factory(
           method: "POST"
         },
 
-        // INTERNAL. Use Receipt.customer() instead.
-        "::get::Receipt::customer": {
-          url: urlBase + "/Receipts/:id/customer",
-          method: "GET"
-        },
-
         // INTERNAL. Use AccountType.customers.findById() instead.
         "::findById::AccountType::customers": {
           params: {
@@ -8073,12 +8309,6 @@ module.factory(
         "createChangeStream": {
           url: urlBase + "/Categories/change-stream",
           method: "POST"
-        },
-
-        // INTERNAL. Use Receipt.category() instead.
-        "::get::Receipt::category": {
-          url: urlBase + "/Receipts/:id/category",
-          method: "GET"
         },
       }
     );

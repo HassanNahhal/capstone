@@ -6,77 +6,30 @@
     "validateUpsert": true
   },
   "properties": {
-    "unit": {
-      "type": "number",
-      "required": true
-    },
     "receiptId": {
       "type": "number",
       "id": false,
-      "required": false
+      "required": true
     },
-    "id": {
+    "itemId": {
       "type": "number",
       "id": false,
-      "required": false
+      "required": true
     }
   },
   "validations": [],
   "relations": {
-    "receipts": {
-      "type": "hasMany",
+    "receipt": {
+      "type": "belongsTo",
       "model": "Receipt",
       "foreignKey": "receiptId"
     },
-    "items": {
-      "type": "hasMany",
+    "item": {
+      "type": "belongsTo",
       "model": "Item",
       "foreignKey": "itemId"
-    }
+    }      
   },
-  "acls": [
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$everyone",
-      "permission": "DENY"
-    },
-    {
-      "accessType": "READ",
-      "principalType": "ROLE",
-      "principalId": "$authenticated",
-      "permission": "ALLOW"
-    },
-    {
-      "accessType": "READ",
-      "principalType": "ROLE",
-      "principalId": "$authenticated",
-      "permission": "ALLOW"
-    },
-    {
-      "accessType": "READ",
-      "principalType": "ROLE",
-      "principalId": "$authenticated",
-      "permission": "ALLOW"
-    },
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$everyone",
-      "permission": "DENY"
-    },
-    {
-      "accessType": "READ",
-      "principalType": "ROLE",
-      "principalId": "$authenticated",
-      "permission": "ALLOW"
-    },
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "admin",
-      "permission": "ALLOW"
-    }
-  ],
+  "acls": [],
   "methods": {}
 }

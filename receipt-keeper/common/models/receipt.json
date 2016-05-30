@@ -27,102 +27,23 @@
     },
     "imageFilePath": {
       "type": "string",
-      "required": true
-    },
-    "storeId": {
-      "type": "number",
-      "id": false,
-      "required": true
-    },
-    "id": {
-      "type": "number",
-      "id": true,
       "required": false
     }
   },
   "validations": [],
   "relations": {
-    "customer": {
-      "type": "belongsTo",
-      "model": "Customer",
-      "foreignKey": "customerId"
-    },
-    "receiptItems": {
+    "items": {
       "type": "hasMany",
-      "model": "ReceiptItem",
-      "foreignKey": ""
-    },
-    "receiptItem": {
-      "type": "belongsTo",
-      "model": "ReceiptItem",
-      "foreignKey": "receiptId"
+      "model": "Item",
+      "foreignKey": "",
+      "through": "ReceiptItem"
     },
     "store": {
       "type": "belongsTo",
       "model": "Store",
-      "foreignKey": "receiptId"
-    },
-    "category": {
-      "type": "belongsTo",
-      "model": "Category",
-      "foreignKey": "categoryId"
-    }
+      "foreignKey": "storeId"
+    }    
   },
-  "acls": [
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$everyone",
-      "permission": "DENY"
-    },
-    {
-      "accessType": "READ",
-      "principalType": "ROLE",
-      "principalId": "$authenticated",
-      "permission": "ALLOW"
-    },
-    {
-      "accessType": "READ",
-      "principalType": "ROLE",
-      "principalId": "$authenticated",
-      "permission": "ALLOW"
-    },
-    {
-      "accessType": "READ",
-      "principalType": "ROLE",
-      "principalId": "$authenticated",
-      "permission": "ALLOW"
-    },
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$everyone",
-      "permission": "DENY"
-    },
-    {
-      "accessType": "READ",
-      "principalType": "ROLE",
-      "principalId": "$authenticated",
-      "permission": "ALLOW"
-    },
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$owner",
-      "permission": "ALLOW"
-    },
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "admin",
-      "permission": "ALLOW"
-    },
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "admin",
-      "permission": "ALLOW"
-    }
-  ],
+  "acls": [],
   "methods": {}
 }
