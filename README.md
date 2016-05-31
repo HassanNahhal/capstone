@@ -12,3 +12,8 @@ https://github.com/infomat/capstone_android
 ## Web Application
 https://github.com/infomat/capstone_web
 
+## Deployment
+http://receipt-keeper.herokuapp.com
+
+## API Reference
+http://receipt-keeper.herokuapp.com/explorer
